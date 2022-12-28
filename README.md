@@ -1,0 +1,1 @@
+# techmindset.github.io
