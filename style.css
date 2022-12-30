@@ -9,6 +9,13 @@
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
     }
+    /*          responive nava bar*/
+    .resp-nav1{
+        display: none;
+        width: 50px;
+        height: 50px;
+        
+    }
     .nav1 {
         position: sticky;
         top: 0;
@@ -25,7 +32,7 @@
     .header{
         width: auto;
         min-height: 100vh;
-        background-image: linear-gradient(to right, #16005a,transparent),url(cmp_transcpr.jpg);
+        background-image: linear-gradient(to right, #0a0127,transparent),url(cmp_transcpr.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -33,7 +40,7 @@
 
     .head-info{
         color: white;
-        background-color:#14073C;
+        background-color:#050113;
         display: flex;
         justify-content: space-between;
         padding: 10px 20px;
@@ -41,37 +48,89 @@
         
     }
     .link-a ul li{
-        display: inline;
+        display: inline-flex;
+        flex-wrap: wrap;
         
 
+    }
+    .hr{
+        font-size: 25px;
     }
     .link-a ul li a{
         color: white;
         text-decoration: none;
-        padding: 0 15px;
+        padding: 0 20px;
+        font-weight: bold;
+        line-height: 20px;
         
     }
+    .link-a ul li a:hover{
+
+        color:#c42c91;
+    }
+
 
     .nav-bar {
         width: auto;
-        display: flex;
         justify-content: space-between;
         color: white;
-        background-color:#1E014F; 
-        padding:30px 40px;
+        background-color:#311c55; 
+        padding: 10px 20px;
     }
     .nav-links{
-        display: inline-flex;
+        display: flex;
+        justify-content: space-between;
+       
     }
+    .nav-links ul{
+        display: inline-flex;
+        padding: 0 15px;
+        flex-wrap: wrap;
 
+        
+    }
     .nav-links ul li{
         display: inline;
         padding: 0 15px;
+        
     }
     .nav-links ul li a{
         text-decoration: none;
         color: white;
-        font-weight: bolder;
+        font-weight: lighter;
+        font-size: 20px;
+    
+        
+    }
+    .hi{
+        background-color: rgb(7, 0, 0);
+        
+        position: fixed;
+        bottom: 10%;
+        color: white;
+    }
+    .acrony{
+        padding: 20px;
+    }
+    .search-bar{
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    .legend-search{
+        padding: 10px;
+        border-top:  2px solid white;
+        border-right:  2px solid white;
+    }
+   .legend-search:hover{
+        transition: 1s;
+        border-bottom:  2px solid white;
+        border-left:  2px solid white;
+        }
+  
+    .submit-search{
+        background:#ff9677 ;
+        border: white 2px solid;
+        border-radius: 10px;
     }
     .search-bar a{
         display: inline-flex;
@@ -83,7 +142,7 @@
         box-sizing: border-box;
     }
     .mentor-btn a{
-        border: white solid 2px;
+    border: white solid 2px;
     padding: 10px;
     background:transparent;
     border-radius: 2px;
@@ -103,14 +162,14 @@
         width: auto;
     }
     .ket{
-        background-image: linear-gradient(to right top, #070d81, transparent);
+        background: #05073d;
         background-position: center;
         background-size: cover;
         margin-top: 70px;
         padding: 50px;
         border-radius: 15px;
         display:inline-flex;
-        box-shadow: rgb(254, 254, 255) 0px 5px 15px;
+        box-shadow: #000000ce 0px 5px 15px;
         flex-wrap: wrap;
         width: auto;
     }
@@ -317,9 +376,28 @@
     padding: 30px;
     display:inline-flex;
     }
+    .search-btn{
+        background-color: transparent;
+        border: 2px white solid;
+       padding: 5px;
+        
+        
+    }
+    .legend-search input {
+        background: transparent;
+        border: none;
+        outline: none;
+        color: white;
+    }
+    .submit-search img{
+        background-color: #ff9677;
+        padding: 5px;
+        border-radius: 5px;
+        
+    }
 
     .feature2{
-    background-image: linear-gradient(to right, #16005a,transparent),url(cmp.jpg);
+    background-image: linear-gradient(to right, #16005a,transparent),url(illus..png);
     background-position: center;
     background-size: cover;
     width: auto;
@@ -373,21 +451,7 @@
     font-size: 35px;
     padding: 10px;
     }
-    .press{
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    padding: 10px;
-    }
-    .press h2{
-    font-weight: 100;
-
-    }
-    .press p{
-    font-size: 20px;
-
-    }
-    .feature3 a{
+.feature3 a{
     text-decoration: none;
     font-size: 20px;
     color: white;
@@ -403,12 +467,8 @@
     min-height: 50vh;
     padding: 30px;
 
-
-
     }
-    .line{
-    border: 2px #ff9677 solid;
-    }
+ 
     .line2{
     width: auto;
     margin-left: 20px;
@@ -556,13 +616,48 @@
         text-decoration: none;
        color: #333138;
     }
-    
+    /* ----------------------------------------------------Collapse button---------------------------------------------------- */
+       .collapse{
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        background-color: rgb(22, 22, 71);
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+       }
+       .active, .collapse:hover{
+        background: #160707;
+       }
+       .colla-content{
+        padding: 0 18px;
+        overflow: hidden;
+        display: none;
+        background: #160707;
+       }
+       .collapse::after{
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: white;
+        float: right;
+        margin-left: 5px;
+       }
+  
+
     /* ----------------------------------------------------Some responsive---------------------------------------------------- */
 
+    @media screen and (max-width:700px) {
+
+    }
+
     @media screen and (max-width:500px) {
-       
+
+     .hr{
+        display: none;
+     }  
     .ket{
-    
     background-image: linear-gradient(to right top, #070d81, transparent);
     background-position: center;
     background-size: cover;
@@ -649,6 +744,39 @@
             padding: 30px;
             display:inline-flex;
             flex-wrap: wrap;
+            }
+
+            .resp-nav1{
+                display: block;
+                background-color: #eee;
+                color: #444;
+                cursor: pointer;
+                outline: none;
+                font-size: 15px;
+               
+            }
+            .link-a{
+                display: none;
+                overflow: hidden;
+
+            }
+            .link-a ul li{
+                display: block;
+            }
+            .hr{
+                display: none;
+            }
+            .link2{
+                display: none;
+                overflow: hidden;
+
+            }
+            .link2 ul li{
+                display: block;
+            }
+            .nav-links{
+                display: flex;
+                justify-content: space-between;
             }
         
 

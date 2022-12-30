@@ -6,6 +6,7 @@
     body{
       
         box-sizing: border-box;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
        
 
     }
@@ -33,8 +34,8 @@
     }
 
     .head-info{
-        color: white;
-        background-color:#14073C;
+       color: white;
+        background-color:#050113;
         display: flex;
         justify-content: space-between;
         padding: 10px 20px;
@@ -42,14 +43,20 @@
         
     }
     .link-a ul li{
-        display: inline;
+       display: inline-flex;
+        flex-wrap: wrap;
         
 
     }
+     .hr{
+        font-size: 25px;
+    }
     .link-a ul li a{
-        color: white;
+          color: white;
         text-decoration: none;
-        padding: 0 15px;
+        padding: 0 20px;
+        font-weight: bold;
+        line-height: 20px;
         
     }
     .link-a ul li a:hover{
@@ -58,15 +65,32 @@
     }
 
     .nav-bar {
-        width: auto;
-        display: flex;
+          width: auto;
         justify-content: space-between;
         color: white;
-        background-color:#1E014F; 
-        padding:30px 40px;
+        background-color:#311c55; 
+        padding: 10px 20px;
     }
     .nav-links{
+         display: flex;
+        justify-content: space-between;
+    }
+       .nav-links ul{
         display: inline-flex;
+        padding: 0 15px;
+        flex-wrap: wrap;
+
+        
+    }
+        .hi{
+        background-color: rgb(7, 0, 0);
+        
+        position: fixed;
+        bottom: 10%;
+        color: white;
+    }
+    .acrony{
+        padding: 20px;
     }
 
     .nav-links ul li{
@@ -76,7 +100,46 @@
     .nav-links ul li a{
         text-decoration: none;
         color: white;
-        font-weight: bolder;
+        font-weight: lighter;
+        font-size: 20px;
+    }
+      .search-bar{
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+        .legend-search{
+        padding: 10px;
+        border-top:  2px solid white;
+        border-right:  2px solid white;
+    }
+        .search-btn{
+        background-color: transparent;
+        border: 2px white solid;
+       padding: 5px;
+        
+        
+    }
+    .legend-search input {
+        background: transparent;
+        border: none;
+        outline: none;
+        color: white;
+    }
+   .legend-search:hover{
+        transition: 1s;
+        border-bottom:  2px solid white;
+        border-left:  2px solid white;
+        }
+        .submit-search{
+        background:#ff9677 ;
+        border: white 2px solid;
+        border-radius: 10px;
+    }
+        .submit-search img{
+        background-color: #ff9677;
+        padding: 5px;
+        border-radius: 5px;
+        
     }
     .search-bar a{
         display: inline-flex;
