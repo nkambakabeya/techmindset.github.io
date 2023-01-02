@@ -23,6 +23,22 @@
         flex-wrap: wrap;
         
     }
+        /* activea class */
+        .activea{
+            position: relative;
+        }
+        .activea::after{
+            content: '';
+            background:#c42c91;
+            width: 25px;
+            height: 2px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -12px;
+            border-radius: 2px;
+        }
+        /* end of active */
     .header{
         width: auto;
         min-height: 100vh;

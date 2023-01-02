@@ -1,0 +1,127 @@
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background:linear-gradient(black, black,black);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .signup {
+            padding: 2% 7% ;
+            width: auto;
+            background: linear-gradient(rgba(220, 9, 143, 0.818), rgba(84, 5, 70, 0.89), rgba(109, 4, 147, 0.694), rgb(220, 9, 143, 0.818));
+        }
+        .h1 {
+            text-align: center;
+            color: aliceblue;
+        }
+        .h1:hover{
+            color: wheat;
+        }
+        .box {
+            box-shadow: red 0px 5px 15px;
+            display: inline-flex;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            padding: 30px;
+            border-radius: 10px;
+            width: 60%;
+            padding-inline: 10px;
+        }
+        .hom{
+            width: 50%;
+
+        }
+        .container{
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+            padding: 8px;
+            background-color: black;
+            border-radius: 10px;
+            float: left;
+        }
+        .container:hover{
+            background-color: rgb(77, 8, 142);
+        }
+        .image {
+            margin-top: 65px;
+            margin-left: 20px;
+        }
+        .creat {
+            width: 50%;
+            background-color: transparent;
+            color: rgb(16, 4, 40);
+        }
+        .creat label{
+            color: white;
+        }
+        .creat input {
+            padding: 8px;
+            width: 65%;
+            outline: none;
+            border:none;
+            box-shadow: rgb(195, 189, 189) 2px 4px 8px;
+            border-radius: 5px;
+        }
+        .logg {
+            float: right;
+            text-decoration:none;
+            color: white;
+            padding: 10px;
+            background-color: black;
+        }
+        .logg:hover{
+            background-color: rgb(77, 8, 142);
+        }
+        .account {
+            text-align: center;
+            color:white;
+            font-size: 20px;
+        }
+        .btn {
+            text-align: center;
+            color: white;
+            border: none;
+            border-radius: 2px;
+            background-color: blue;
+            padding: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+        }
+        .btn:hover{
+            background-color:rgba(54, 3, 44, 0.722);
+        }
+        .or {
+            text-align: center;
+            padding: 10px;
+        }
+        .google {
+            text-decoration: none;
+            background-color: rgb(77, 12, 142);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .google:hover{
+            background-color: rgb(120, 11, 105);
+        }
+        .ine {
+            padding: 2px;
+            border-radius: 2px;
+        }
+        .agreement {
+            margin-left: 5px;
+            margin-right: 5px;
+            color: aliceblue;
+        }
+        .in label {
+            margin-left: 10px;
+            text-align: right;
+        }
+        .in input{
+            width: 15px;
+            box-shadow: none;
+        }

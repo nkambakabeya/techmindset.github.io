@@ -1,6 +1,6 @@
     *{
         margin: 0;
-    padding: 0;
+        padding: 0;
 
     }
     body{
@@ -9,13 +9,7 @@
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
     }
-    /*          responive nava bar*/
-    .resp-nav1{
-        display: none;
-        width: 50px;
-        height: 50px;
-        
-    }
+
     .nav1 {
         position: sticky;
         top: 0;
@@ -29,6 +23,22 @@
         flex-wrap: wrap;
         
     }
+    /* activea class */
+    .activea{
+        position: relative;
+    }
+    .activea::after{
+        content: '';
+        background:#c42c91;
+        width: 25px;
+        height: 2px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -12px;
+        border-radius: 2px;
+    }
+    /* end of active */
     .header{
         width: auto;
         min-height: 100vh;
@@ -61,7 +71,6 @@
         text-decoration: none;
         padding: 0 20px;
         font-weight: bold;
-        line-height: 20px;
         
     }
     .link-a ul li a:hover{
@@ -80,7 +89,11 @@
     .nav-links{
         display: flex;
         justify-content: space-between;
+        overflow: hidden;
        
+    }
+    .icon{
+        display: none;
     }
     .nav-links ul{
         display: inline-flex;
@@ -222,7 +235,7 @@
     background-image: linear-gradient(to top , #e904cad2, transparent);
     }
     .topics-img{
-    margin-left: 60px;
+    /* margin-left: 60px; */
     border: none;
     padding-top: 10px;
 
@@ -471,7 +484,7 @@
  
     .line2{
     width: auto;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 
     }
     .container-box2{
@@ -648,7 +661,13 @@
 
     /* ----------------------------------------------------Some responsive---------------------------------------------------- */
 
-    @media screen and (max-width:700px) {
+    @media screen and (max-width:600px) {
+        .link-a{
+            
+        }
+        .icon{
+            display: block;
+        }
 
     }
 
@@ -746,39 +765,10 @@
             flex-wrap: wrap;
             }
 
-            .resp-nav1{
-                display: block;
-                background-color: #eee;
-                color: #444;
-                cursor: pointer;
-                outline: none;
-                font-size: 15px;
-               
-            }
-            .link-a{
-                display: none;
-                overflow: hidden;
+            /*Responsive nav bar*/
 
-            }
-            .link-a ul li{
-                display: block;
-            }
-            .hr{
-                display: none;
-            }
-            .link2{
-                display: none;
-                overflow: hidden;
 
-            }
-            .link2 ul li{
-                display: block;
-            }
-            .nav-links{
-                display: flex;
-                justify-content: space-between;
-            }
-        
+           
 
     }
 /*--------------------------------------------------------------- end of the responsive  update from Ankc -=------------------------*/
