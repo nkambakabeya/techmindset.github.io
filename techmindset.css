@@ -4,7 +4,7 @@
 
 }
 body{
-  
+    background-color: rgb(212, 214, 216);
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -42,7 +42,7 @@ body{
 .header{
     width: auto;
     min-height: 100vh;
-    background-image: linear-gradient(to right, #0a0127,transparent),url(cmp_transcpr.jpg);
+    background-image: linear-gradient(to right, black,transparent),url(cp.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -178,4 +178,242 @@ border-radius: 2px;
     padding: 5px;
     border-radius: 5px;
     
+}
+
+
+.container{
+    padding: 2% 7%;
+    color: white;
+}
+.ket{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image:linear-gradient(to right , rgb(27, 7, 73), transparent),url(photoshop.jpg);
+    background-position: center;
+    background-size: contain;
+    border-radius: 30px;
+    padding: 40px;
+    border: 1px white solid;
+    color: white;
+    box-shadow: 10px 30px 5px black;
+}
+.containers h1{
+    font-size: 50px;
+}
+.containers h3{
+    font-size: 30px;
+    font-weight: lighter;
+}
+.containers a{
+    padding: 10px;
+    background-color: rgb(160, 33, 143);
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+.container h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.plan{
+    border-radius: 10px;
+    padding: 10px 20px ;
+    background: #001749;
+    text-decoration: none;
+    color: white;
+
+}
+.backend img{
+    width: 40%;
+}
+.product{
+    color: black;
+    display: inline-flex;
+    align-items: center;
+   
+}
+.product h1{
+    text-align: center;
+}
+.skills-flow{
+    background-color: white;
+    border-radius: 20px;
+    padding:  10px ;
+    width: 100%;
+    display: inline-block;
+    margin-inline: 40px;
+    text-align: left;
+}
+.skills-flow button{
+    text-align: left;
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+   
+}
+.skills-flow video{
+    border-radius: 20px;
+}
+.colla-content{
+    display: none;
+}
+.exp{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #c42c91;
+    border-radius: 20px;
+}
+.active, .collapse:hover{
+    background:black;
+    color: white;
+   }
+   .colla-content{
+    padding: 0 18px;
+    overflow: hidden;
+    display: none;
+    background:black;
+   }
+   .collapse::after{
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+   }
+   .ket2{
+    width: 70%;
+    background:white;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px white solid;
+    color: black;
+}
+.ket2 h2{
+    text-align: left;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.el-links a{
+    text-decoration: none;
+    color: #c42c91;
+    text-align: left;  
+}
+.whytech{
+    background: white;
+    color: black;
+    min-height: 70vh;
+    width: 100%;
+}
+.why{
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.box11{
+    width: 50%;
+   
+}
+.box11 h2{
+   font-size: 40px;
+   font-weight: bolder;
+   
+}
+.box11 p{
+   font-size: 20px;
+   
+}
+.box11 a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #c42c91;
+    border-radius: 20px;
+ }
+.box12{
+    width: 50%;
+}
+.box12 img{
+    width: 100%;
+}
+
+/* footerrrrrrrrrrrr */
+.footer{
+    color: white;
+    min-height: 60vh;
+    background-color: #07011b;
+}
+.words{
+    display: inline;
+    justify-content: space-between;
+    width: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 70px;
+}
+.sub-btn{
+    padding: 15px;
+    background-color: #e904cad2;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border: 2px solid #e904cad2;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.words div{
+    margin-inline: 35px;
+}
+.support a, .community a, .compa a{
+    font-size: 20px;
+    padding: 6px;
+    text-decoration: none;
+   display: block;
+   color: #333138;
+   
+}
+.newsletter aside, .newsletter label {
+    font-size: 20px;
+    padding: 6px;
+    text-decoration: none;
+   display: block;
+   color: #333138;
+}
+.newsletter input[type=email]{
+    background-color: #14073C;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+label .check{
+    background-color: #1E014F;
+}
+.insider{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.insider a{
+    font-size: 15px;
+    padding: 6px;
+    text-decoration: none;
+   color: #333138;
+}
+@media screen and (max-width:500px) {
+    .skills-flow{
+        display: inline-block;
+    }
+    .why{
+    display: inline-block;
+    }
 }
