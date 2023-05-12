@@ -179,3 +179,169 @@ border-radius: 2px;
     border-radius: 5px;
     
 }
+
+
+/* style the header section for the head */
+.header{
+    min-height: 50vh;
+    background-image: linear-gradient(rgb(14, 3, 3),transparent), url(bac2.jpg) ;
+    background-position: center;
+    background-size: cover;
+
+}
+.head-title{
+    color: white;
+    padding: 2px 7%; 
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.header p{
+    color: white;
+    padding: 2px 7%; 
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+/* style the team section */
+.team-boxes{
+    /* width: 100%; */
+    /* display: flex;
+    justify-content: center; */
+    position: relative ;
+    top: -100px;
+    margin-bottom: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap:30px;
+    
+}
+.advisor{
+    display: block;
+}
+.advisor h2{
+    text-align: center;
+}
+.advisor-boxes{
+
+    /* width: 100%; */
+    /* display: flex;
+    justify-content: center; */
+    /* position: relative ;
+    top: -100px; */
+    margin-bottom: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap:30px;
+    
+}
+
+
+.team-box{
+    width: 250px;
+    height: 320px;
+    background-image: linear-gradient(#ffff,transparent);
+    padding: 20px;
+    margin-left: 10px;  
+    box-shadow: 5px 10px 15px #bdb4b4;
+}
+.team-box img{
+    width: 50%;
+    border-radius: 50%;
+}
+.team-box .name{
+    font-weight: bolder;
+    font-size: larger;
+   
+}
+.team-box .function{
+    font-weight: bold;
+    color: #ff0080;
+   
+}
+
+
+.footer{
+    color: white;
+    min-height: 60vh;
+    background-color: #07011b;
+}
+.words{
+    display: inline;
+    justify-content: space-between;
+    width: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 70px;
+}
+.sub-btn{
+    padding: 15px;
+    background-color: #e904cad2;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border: 2px solid #e904cad2;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.words div{
+    margin-inline: 35px;
+}
+.support a, .community a, .compa a{
+    font-size: 20px;
+    padding: 6px;
+    text-decoration: none;
+   display: block;
+   color: #333138;
+   
+}
+.newsletter aside, .newsletter label {
+    font-size: 20px;
+    padding: 6px;
+    text-decoration: none;
+   display: block;
+   color: #333138;
+}
+.newsletter input[type=email]{
+    background-color: #14073C;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+label .check{
+    background-color: #1E014F;
+}
+.insider{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.insider a{
+    font-size: 15px;
+    padding: 6px;
+    text-decoration: none;
+   color: #333138;
+}
+
+
+/* styling the features sections for teams members */
+.features{
+    background: #d4d4d4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap:30px;
+    margin-bottom: 10px;
+    padding: 50px;
+
+}
+.features .image img{
+    width: 100%;
+    border-radius: 0 50% 0 50%;
+}
